@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import {
-  DesktopOutlined,
-  FileOutlined,
-  PieChartOutlined,
-  TeamOutlined,
-  UserOutlined,
+  HomeOutlined,
+  ShoppingCartOutlined,
+  PlayCircleOutlined,
+  LogoutOutlined,
+
 } from '@ant-design/icons';
-import type { MenuProps } from 'antd';
-import {  Layout, Menu, theme } from 'antd';
+import {  Layout, Menu } from 'antd';
 import { Link, Outlet } from 'react-router-dom';
 
 const {  Content, Footer, Sider } = Layout;
@@ -21,20 +20,37 @@ const NeuroNavbar: React.FC = () => {
     <Layout style={{ minHeight: '100vh' }}>
       <Sider collapsible collapsed={collapsed} onCollapse={(value) => setCollapsed(value)}>
         <div className="demo-logo-vertical" />
-        <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline" items={[{
+        <Menu theme="dark"  mode="inline" items={[
+          {
+            key:0,
+            label: <h1>NeuroFit</h1>
+          },
+          
+          {
+
           key:1,
-          label:<Link to={"/neuro/home"}>Inicio</Link>,
-          icon:<DesktopOutlined />
+          label:<Link to={"/neuro"}>Inicio</Link>,
+          icon:<HomeOutlined />
         },
         {
           key:2,
-          label:<Link to={"/neuro/exercise"}>Ejercicios</Link>
+          label:<Link to={"/neuro/exercise"}>Ejercicios</Link>,
+          icon:<PlayCircleOutlined />
         },
         {
           key:3,
-          label: <Link to={"/neuro/buy"}>Adquirir</Link>
+          label: <Link to={"/neuro/buy"}>Adquirir</Link>,
+          icon: <ShoppingCartOutlined />
+          
+        },
+        {
+          key:4,
+          label: <Link to={"/"}>Cerrar Sesion</Link>,
+          icon:<LogoutOutlined />
         }]} />
+        
       </Sider>
+      
       <Layout>
   
         <Content style={{ margin: '0 16px' }}>

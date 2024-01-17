@@ -1,7 +1,15 @@
 
+import NeuroDiseaseForm from "../../components/neuroApp/NeuroDiseaseForm";
+
+
 
 export default function NeuroExercises() {
+
   return (
-    <div>NeuroExercises</div>
+    <section>
+    
+    <NeuroDiseaseForm />
+    
+    </section>
   )
 }

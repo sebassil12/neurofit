@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'antd';
+import { Outlet } from 'react-router-dom';
+import NeuroCollapse from './NeuroCollapse';
 
 const NeuroModal: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -19,10 +21,11 @@ const NeuroModal: React.FC = () => {
   return (
     <>
       <Button type="primary" onClick={showModal}>
-        Open Modal
+        Comprar
       </Button>
-      <Modal title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-        
+      <Modal title="Formas de Pago" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+        <NeuroCollapse />
+        <Outlet />
       </Modal>
     </>
   );

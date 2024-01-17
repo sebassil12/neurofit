@@ -1,4 +1,4 @@
-import NeuroForm from "../components/index/NeuroForm";
+import NeuroForm from "../../components/index/NeuroForm";
 
 
 export default function Login() {
