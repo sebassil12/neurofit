@@ -10,7 +10,9 @@ import {
   Select,
   TreeSelect,
 } from 'antd';
+import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
+import FormContext from './FormContext';
 
 const { RangePicker } = DatePicker;
 
@@ -26,10 +28,11 @@ const formItemLayout = {
 };
 
 export default function NeuroDiseaseForm(){
+    const {setIsFirstForm} = useContext(FormContext)
     const navigate = useNavigate();
     const onFinish =()=>{
-        
         navigate("/neuro/exercise/plan_1")
+        setIsFirstForm(false);
     }
 
 return(

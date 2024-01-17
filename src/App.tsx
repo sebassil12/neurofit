@@ -15,6 +15,7 @@ import FormContext from "./components/neuroApp/FormContext";
 import Home from "./pages/Index/Home";
 import About from "./pages/Index/About";
 import NeuroHome from "./pages/Neuro/NeuroHome";
+import NeuroDiseaseForm from "./components/neuroApp/NeuroDiseaseForm";
 
 
 
@@ -24,7 +25,7 @@ import NeuroHome from "./pages/Neuro/NeuroHome";
 
 export default function App(){
   const [isPurchase, setIsPurchase] = useState<boolean>(false);
-  const [isFirst, setIsFirst] = useState<boolean>(true);
+  const [isFirstForm, setIsFirstForm] = useState<boolean>(true);
   return(
     <BrowserRouter>
       <Routes>
@@ -39,9 +40,10 @@ export default function App(){
           <Route path="/" element={<NavbarNeuro/>} >
           <Route index element={<NeuroHome />}/>
           <Route path="/exercise/*" element={
-          <FormContext.Provider value={{isFirst, setIsFirst}}>
+          <FormContext.Provider value={{isFirstForm, setIsFirstForm}}>
           <Routes>
             <Route path="/" element={<NeuroExercises/>}/>
+            <Route path="/form" element={<NeuroDiseaseForm />}/>
             <Route path="/plan_1" element={<NeuroPlan1 />}/>
           </Routes>
           </FormContext.Provider>

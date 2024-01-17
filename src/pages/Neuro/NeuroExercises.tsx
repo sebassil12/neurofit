@@ -1,15 +1,23 @@
+import { Button } from "antd";
 
-import NeuroDiseaseForm from "../../components/neuroApp/NeuroDiseaseForm";
+import { useContext } from "react";
+import { Link } from "react-router-dom";
+import FormContext from "../../components/neuroApp/FormContext";
+
 
 
 
 export default function NeuroExercises() {
-
+  const {isFirstForm} = useContext(FormContext)
   return (
     <section>
-    
-    <NeuroDiseaseForm />
-    
+      <Link to={"/neuro/exercise/form"}><Button type="primary">
+        {isFirstForm ? <p>Realizar Test</p> : <p>Realizar test de nuevo</p>
+        } 
+        
+        
+        </Button></Link>
+      <Link to={"/neuro/exercise/plan_1"}><Button type="primary">Ir a mi plan</Button></Link>
     </section>
   )
 }
