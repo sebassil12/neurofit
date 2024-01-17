@@ -1,5 +1,5 @@
-import { Button, Card, Col, Row } from 'antd';
-import { Link } from 'react-router-dom';
+import { Card, Col, Row } from 'antd';
+
 import NeuroModal from './NeuroModal';
 
 interface CardProps{

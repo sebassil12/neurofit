@@ -1,6 +1,6 @@
 import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/icons';
-import React, { useContext, useState } from 'react';
-import { Avatar, Card, Skeleton, Switch } from 'antd';
+import React, { useContext} from 'react';
+import { Avatar, Card, } from 'antd';
 import DebitContext from '../../neuroApp/DebitContext';
 import WarningForPurchase from './WarningForPurchase';
 
