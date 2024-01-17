@@ -6,7 +6,7 @@ const { Header, Content, Footer } = Layout;
 
 
 
-const Navbar: React.FC = () => {
+const NeuroNavbar: React.FC = () => {
 
 
   return (
@@ -28,6 +28,10 @@ const Navbar: React.FC = () => {
           defaultSelectedKeys={['1']}
           items={[
             {
+              key: 0,
+              label:<h1>Neurofit</h1>
+            },
+            {
                 key:1, 
                 label:<Link to={"/home"}>Inicio</Link>
             },
@@ -37,7 +41,7 @@ const Navbar: React.FC = () => {
             },
             {
                 key:3, 
-                label: <Link to={"/buy"}>Adquirir</Link>
+                label: <Link to={"/login"}>Iniciar Sesion</Link>
             }
             
           ]}
@@ -54,4 +58,4 @@ const Navbar: React.FC = () => {
   );
 };
 
-export default Navbar;
+export default NeuroNavbar;
