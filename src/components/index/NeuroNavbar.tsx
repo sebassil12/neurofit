@@ -33,7 +33,7 @@ const NeuroNavbar: React.FC = () => {
             },
             {
                 key:1, 
-                label:<Link to={"/home"}>Inicio</Link>
+                label:<Link to={"/"}>Inicio</Link>
             },
             {
                 key:2,
