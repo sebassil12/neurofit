@@ -1,6 +1,7 @@
 import React from 'react';
 import { Layout, Menu } from 'antd';
 import { Link, Outlet } from 'react-router-dom';
+import { LOGO } from '../../constants/constants';
 
 const { Header, Content, Footer } = Layout;
 
@@ -29,7 +30,8 @@ const NeuroNavbar: React.FC = () => {
           items={[
             {
               key: 0,
-              label:<h1>Neurofit</h1>
+              label:<h1><img src={LOGO.main} style={{width:40,height:40, display:'inline', transform:'translate(0,20%)'}}/>Neurofit</h1>,
+              
             },
             {
                 key:1, 

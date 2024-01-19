@@ -7,7 +7,8 @@ interface CardProps{
     item1:string,
     item2:string,
     item3:string,
-    item4:string
+    item4:string,
+    
 }
 function NeuroCard ({title, item1, item2, item3,item4}:CardProps){
    return( 
