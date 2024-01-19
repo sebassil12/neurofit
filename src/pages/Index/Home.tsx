@@ -1,6 +1,6 @@
 import CardHome from "../../components/index/CardHome/CardHome";
 import CarouselHome from "../../components/index/CarouselHome/CarouselHome";
-import Footer from "../FooterMain";
+
 
 import home from "./styles/home.module.css"
 

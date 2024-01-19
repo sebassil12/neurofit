@@ -1,7 +1,7 @@
 import React from 'react';
 import type { CollapseProps } from 'antd';
 import { Collapse } from 'antd';
-import NeuroDebit from './NeuroDebit';
+
 import Debit from '../../pages/Neuro/Debit';
 
 const text = `
