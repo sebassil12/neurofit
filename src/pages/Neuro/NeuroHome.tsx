@@ -1,5 +1,5 @@
 import NeuroCardHome from "../../components/neuroApp/NeuroCardHome";
-import { APP_HOME, IMAGE_CAROUSEL } from "../../constants/constants";
+import { IMAGE_CAROUSEL } from "../../constants/constants";
 import apphome from './styles/apphome.module.css'
 export default function NeuroHome() {
   return (
