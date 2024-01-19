@@ -8,6 +8,7 @@ import {
 } from '@ant-design/icons';
 import {  Layout, Menu } from 'antd';
 import { Link, Outlet } from 'react-router-dom';
+import { LOGO } from '../../constants/constants';
 
 const {  Content, Footer, Sider } = Layout;
 
@@ -23,7 +24,8 @@ const NeuroNavbar: React.FC = () => {
         <Menu theme="dark"  mode="inline" items={[
           {
             key:0,
-            label: <h1>NeuroFit</h1>
+            label: <h1>NeuroFit</h1>,
+            icon: <img src={LOGO.main} style={{width:20}}/>
           },
           
           {

@@ -1,16 +1,25 @@
-import { Button } from "antd";
+import { Button, Card } from "antd";
 import { Link } from "react-router-dom";
+interface HomeCard{
+    image:string|undefined,
+    title:string,
+    isDocument:boolean,
+    description:string,
+    path:any
 
+}
 
-export default function CardHome() {
+export default function CardHome({image, title, description, isDocument, path}:HomeCard) {
   return (
-    <section>
-        <h1>¡Bienvenido!</h1>
+    <Card>
+        <img src={image}/>
+        <h1 >{title}</h1>
         <br />
-        <p>En NeuroFit nos preocupamos por tu salud. Compra hoy mismo </p>
+        <p>{description}</p>
         <br/>
-        <Link to={"/login"}><Button type="primary">Descubre más</Button></Link>
-
-    </section>
+        { !isDocument ? <Link to={path}><Button type="primary">Descubre más</Button></Link> 
+        : null
+        }
+    </Card>
   )
 }

@@ -1,6 +1,9 @@
 *{
     margin: 0;
     padding: 0;
-    --primary: #1877FF
-}
+    --primary: #1877FF;
+    --secondary:#001529;
+    --third:#90B7EC;
+    overflow-y: hidden;
+}   
 

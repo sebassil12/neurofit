@@ -2,6 +2,7 @@ import React from 'react';
 import { Layout, Menu } from 'antd';
 import { Link, Outlet } from 'react-router-dom';
 import { LOGO } from '../../constants/constants';
+import FooterMain from '../../pages/FooterMain';
 
 const { Header, Content, Footer } = Layout;
 
@@ -50,11 +51,11 @@ const NeuroNavbar: React.FC = () => {
           style={{ flex: 1, minWidth: 0 }}
         />
       </Header>
-      <Content style={{ padding: '0 48px' }}>
+      <Content style={{backgroundColor:'var(--third)'}}>
         <Outlet />
       </Content>
-      <Footer style={{ textAlign: 'center' }}>
-
+      <Footer style={{ textAlign: 'center' ,backgroundColor:'var(--secondary)'}}>
+          <FooterMain />
       </Footer>
     </Layout>
   );

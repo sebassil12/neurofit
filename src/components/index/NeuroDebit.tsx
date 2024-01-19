@@ -1,4 +1,4 @@
-import { Button, Form, Input, Select, Space, Tooltip, Typography } from 'antd';
+import { Button, DatePicker, Form, Input, Select, Space } from 'antd';
 import { useContext } from 'react';
 import DebitContext from '../neuroApp/DebitContext';
 import { useNavigate } from 'react-router-dom';
@@ -28,60 +28,63 @@ return(
     wrapperCol={{ span: 16 }}
     style={{ maxWidth: 600 }}
   >
-    <Form.Item label="Username">
+    <Form.Item label="Número de tarjeta">
       <Space>
         <Form.Item
-          name="username"
+          name="tarjeta"
           noStyle
-          rules={[{ required: true, message: 'Username is required' }]}
+          rules={[{ required: true, message: 'Este campo es requerido' }]}
         >
-          <Input style={{ width: 160 }} placeholder="Please input" />
+          <Input style={{ width: 160 }} placeholder="Número" />
         </Form.Item>
-        <Tooltip title="Useful information">
-          <Typography.Link href="#API">Need Help?</Typography.Link>
-        </Tooltip>
+    
       </Space>
     </Form.Item>
-    <Form.Item label="Address">
-      <Space.Compact>
+    <Form.Item label="Nombre del titular">
+      <Space>
         <Form.Item
-          name={['address', 'province']}
+          name="tarjeta"
           noStyle
-          rules={[{ required: true, message: 'Province is required' }]}
+          rules={[{ required: true, message: 'Este campo es requerido' }]}
         >
-          <Select placeholder="Select province">
-            <Option value="Zhejiang">Zhejiang</Option>
-            <Option value="Jiangsu">Jiangsu</Option>
-          </Select>
+          <Input style={{ width: 160 }} placeholder="Titular" />
         </Form.Item>
-        <Form.Item
-          name={['address', 'street']}
-          noStyle
-          rules={[{ required: true, message: 'Street is required' }]}
-        >
-          <Input style={{ width: '50%' }} placeholder="Input street" />
-        </Form.Item>
-      </Space.Compact>
+    
+      </Space>
     </Form.Item>
-    <Form.Item label="BirthDate" style={{ marginBottom: 0 }}>
+ 
+  <Form.Item label="Vencimiento" style={{ marginBottom: 0 }}>
       <Form.Item
         name="year"
         rules={[{ required: true }]}
         style={{ display: 'inline-block', width: 'calc(50% - 8px)' }}
       >
-        <Input placeholder="Input birth year" />
+        <Input placeholder="Ingrese el mes" />
       </Form.Item>
       <Form.Item
         name="month"
         rules={[{ required: true }]}
         style={{ display: 'inline-block', width: 'calc(50% - 8px)', margin: '0 8px' }}
       >
-        <Input placeholder="Input birth month" />
+        <Input placeholder="Ingrese el año" />
       </Form.Item>
+
+      <Form.Item label="CVV">
+      <Space>
+        <Form.Item
+          name="tarjeta"
+          noStyle
+          rules={[{ required: true, message: 'Este campo es requerido' }]}
+        >
+          <Input style={{ width: 160 }} placeholder="CVV" />
+        </Form.Item>
+    
+      </Space>
+    </Form.Item>
     </Form.Item>
     <Form.Item label=" " colon={false}>
       <Button type="primary" htmlType="submit">
-        Submit
+        Realizar pago
       </Button>
     </Form.Item>
   </Form>

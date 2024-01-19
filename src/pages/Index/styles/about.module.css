@@ -1,20 +1,11 @@
-
 .container{
-
-    height: 80vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
-    
-}
-
-.carousel_container{
-    width: 50vw;
-   
-
+    height: 80vh;
 }
 
 .card{
+    
     display: flex;
     justify-content: center;
     align-items: center;

@@ -2,6 +2,7 @@ import React from 'react';
 import type { CollapseProps } from 'antd';
 import { Collapse } from 'antd';
 import NeuroDebit from './NeuroDebit';
+import Debit from '../../pages/Neuro/Debit';
 
 const text = `
   A dog is a type of domesticated animal.
@@ -12,12 +13,12 @@ const text = `
 const items: CollapseProps['items'] = [
   {
     key: '1',
-    label: 'Deposito',
-    children: <NeuroDebit />,
+    label: 'Débito',
+    children: <Debit />
   },
   {
     key: '2',
-    label: 'Débito',
+    label: 'Deposito',
     children: <p>{text}</p>,
   },
   

@@ -4,20 +4,21 @@
     display: flex;
     text-align: center;
     
-    
 }
 
 .image_container{
     height: 100%;
     width:100%;
-      background-size:cover;
-      background-position:center;
-      background-repeat:'no-repeat' ; 
+    background-size:cover;
+    background-position:center;
+    background-repeat:'no-repeat';
+
 }
 
 .text{
     position: relative;
     font-size:xx-large;
-    color: var(--primary);
+    background-color: var(--secondary);
+    color: var(--third);
     transform: translate(0,50%);
 }
