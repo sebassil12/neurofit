@@ -5,19 +5,20 @@ interface HomeCard{
     title:string,
     isDocument:boolean,
     description:string,
-    path:any
+    path:any,
+    descriptionButton:string
 
 }
 
-export default function CardHome({image, title, description, isDocument, path}:HomeCard) {
+export default function CardHome({image, title, description, isDocument, path, descriptionButton}:HomeCard) {
   return (
     <Card>
-        <img src={image}/>
+        <img src={image} width={50}/>
         <h1 >{title}</h1>
         <br />
         <p>{description}</p>
         <br/>
-        { !isDocument ? <Link to={path}><Button type="primary">Descubre más</Button></Link> 
+        { !isDocument ? <Link to={path}><Button type="primary">{descriptionButton}</Button></Link> 
         : null
         }
     </Card>

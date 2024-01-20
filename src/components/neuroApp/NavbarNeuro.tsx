@@ -24,7 +24,7 @@ const NeuroNavbar: React.FC = () => {
         <Menu theme="dark"  mode="inline" items={[
           {
             key:0,
-            label: <h1>NeuroFit</h1>,
+            label: <h1>NeuroFITT</h1>,
             icon: <img src={LOGO.main} style={{width:20}}/>
           },
           

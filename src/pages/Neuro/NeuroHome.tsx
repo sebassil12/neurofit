@@ -5,10 +5,10 @@ export default function NeuroHome() {
   return (
     <section className={apphome.container}>
       <section>
-        <NeuroCardHome title={"Plan de ejercicios"} description={"Ejercicios acorde a tus necesidades"} pathImage={IMAGE_CAROUSEL.fisio} pathLink={"/neuro/buy"} />
+        <NeuroCardHome title={"Plan de ejercicios"} description={"Ejercicios acorde a tus necesidades"} pathImage={IMAGE_CAROUSEL.fisio} pathLink={"/neuro/buy"} buttonText={'Conoce más'} />
       </section>
       <section>
-        <NeuroCardHome title={"Kit de entrenamiento"} description={"Encuentra todas las herramientas para tus ejercicios"} pathImage={IMAGE_CAROUSEL.old_man} pathLink={"/neuro/buy"} />
+        <NeuroCardHome title={"Kit de entrenamiento"} description={"Encuentra todas las herramientas para tus ejercicios"} pathImage={IMAGE_CAROUSEL.old_man} pathLink={"/neuro/buy"} buttonText={'Conoce más'} />
       </section>
     </section>
   )

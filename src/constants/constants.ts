@@ -5,7 +5,8 @@ export const IMAGE_CAROUSEL = {
 }
 
 export const LOGO ={
-    main:"/images/logo.png"
+    main:"/images/logo.png",
+    second: "/images/second_logo.png"
 }
 
 export const DEBIT = {
@@ -16,4 +17,10 @@ export const DEBIT = {
 export const  APP_HOME ={
     ejercicio:'/images/ejercicio.jpg',
     kit:'/images/kit.jpg'
+}
+
+export const NUMBERS = {
+    one:'/images/one.svg',
+    two:'/images/two.svg',
+    three:'/images/three.svg'
 }

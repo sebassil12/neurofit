@@ -1,0 +1,28 @@
+.plan_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    margin-top: 2%;
+}
+.title_page{
+    margin-top: 2%;
+    display: flex;
+    border: solid black 1px;
+    
+}
+.title_container{
+    width: 100%;
+    text-align: center;
+}
+.title{
+    font-size: 5vw;
+    font-family:'Courier New', Courier, monospace ;
+    color: var(--secondary);
+    letter-spacing: 0.5em;
+}
+
+.description_title{
+    color: var(--third);
+    letter-spacing: 1em;
+    font-size: 2vw;
+}

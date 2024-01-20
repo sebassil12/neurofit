@@ -31,7 +31,7 @@ const NeuroNavbar: React.FC = () => {
           items={[
             {
               key: 0,
-              label:<h1><img src={LOGO.main} style={{width:40,height:40, display:'inline', transform:'translate(0,20%)'}}/>Neurofit</h1>,
+              label:<h1><img src={LOGO.main} style={{width:40,height:40, display:'inline', transform:'translate(0,20%)'}}/>NeuroFITT</h1>,
               
             },
             {
