@@ -3,12 +3,9 @@ import type { CollapseProps } from 'antd';
 import { Collapse } from 'antd';
 
 import Debit from '../../pages/Neuro/Debit';
+import DepositoForm from '../neuroApp/DepositoForm';
 
-const text = `
-  A dog is a type of domesticated animal.
-  Known for its loyalty and faithfulness,
-  it can be found as a welcome guest in many households across the world.
-`;
+
 
 const items: CollapseProps['items'] = [
   {
@@ -19,7 +16,7 @@ const items: CollapseProps['items'] = [
   {
     key: '2',
     label: 'Deposito',
-    children: <p>{text}</p>,
+    children: <DepositoForm />
   },
   
 ];

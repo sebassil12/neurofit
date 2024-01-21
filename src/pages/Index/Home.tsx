@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <section className={home.container}>
       <div className={home.card}>
-        <CardHome title="Bienvenido" isDocument={false} description={"En NeuroFit insertar descripcion de la pagina para bienvenida"} image={undefined} path={"/login"} descriptionButton={"Descubre más"}/>
+        <CardHome title="Bienvenido" isDocument={false} description={"En NeuroFITT insertar descripcion de la pagina para bienvenida"} image={undefined} path={"/login"} descriptionButton={"Descubre más"}/>
       </div>
       <div className={home.carousel_container}>
       <CarouselHome />

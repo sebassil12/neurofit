@@ -7,25 +7,24 @@ import Meta from 'antd/es/card/Meta';
 interface CardProps{
     pathImage:string,
     description:React.ReactNode,
-    maindescription:React.ReactNode,
     title:string,
     sizegroup:string,
     price:string
     
 }
-function NeuroCard ({title, maindescription, pathImage, description, sizegroup, price}:CardProps){
+function NeuroCard ({title, pathImage, description, sizegroup, price}:CardProps){
    return( 
   <Row gutter={0}>
     <Col span={24}>
       <Card>
-        <div style={{display:'flex', height:'40px'}}>
+        <div style={{display:'flex', height:'60px'}}>
         <Meta 
-          avatar={<Avatar src={pathImage} style={{marginTop:'30%'}}/>}
+          avatar={<Avatar src={pathImage} style={{marginTop:'10%'}}/>}
         />
-        <h1 style={{fontSize:'30px'}}>{title}</h1>
+        <h1 style={{fontSize:'20px'}}>{title}</h1>
         </div>
         
-        <Card title={maindescription} style={{marginTop:'5%'}}>
+        <Card >
 
         {description}
         </Card>

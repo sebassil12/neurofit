@@ -15,13 +15,13 @@ export default function Purchase() {
       <section>
 
       <NeuroCard 
-        title={"Básico"}
-        maindescription={
-          <>
-            <h4>PRESENCIAL/ONLINE</h4>
-            <h6>Conviértelo a básico plus ambas pláticas por $8500</h6>
-          </>
-        }
+        title={"Tratamiento Fisioterapeútico"}
+          // maindescription={
+          //   <>
+          //     <h4>PRESENCIAL/ONLINE</h4>
+          //     <h6>Conviértelo a básico plus ambas pláticas por $8500</h6>
+          //   </>
+          // }
         pathImage={NUMBERS.one}
         description={
           <>
@@ -41,12 +41,13 @@ export default function Purchase() {
         />
       </section>
       <section>
-        <NeuroCard pathImage={NUMBERS.two}  maindescription={
-          <>
-          <h4>ONLINE</h4>
-          <h6>Fisio y Nutri en conjunto</h6>
-          </>
-        } 
+        <NeuroCard pathImage={NUMBERS.two}  
+        // maindescription={
+        //   <>
+        //   <h4>ONLINE</h4>
+        //   <h6>Fisio y Nutri en conjunto</h6>
+        //   </>
+        // } 
         description={
           <>
           <h4>INCLUYE</h4> 
@@ -58,17 +59,19 @@ export default function Purchase() {
           </ul>
           </>
         }
-        title={"Nutri-Fisio"} sizegroup={"5-50 personas"} price={"$10 500"} />
+        title={"Kit Neurológico"} sizegroup={"5-50 personas"} price={"$10 500"} />
 
       </section>
       <section>
-        <NeuroCard pathImage={NUMBERS.three}  maindescription={
-          <>
-            <h4>POR UN AÑO</h4>
-            <h6>Personalizado</h6>
-          </>
+        <NeuroCard pathImage={NUMBERS.three}  
+        // maindescription={
+        //   <>
+        //     <h4>POR UN AÑO</h4>
+        //     <h6>Personalizado</h6>
+        //   </>
 
-        } description={
+        // }
+         description={
           <>
             <h4>INCLUYE</h4>
             <ul>
@@ -77,7 +80,7 @@ export default function Purchase() {
               <li>Opciones: Baile, Stretching, Nutrición, Mindfuliness</li>
             </ul>
           </>
-        }title={"Programa Plus"} sizegroup={"5-20 personas"} price={"$49 000"} />
+        }title={"Kit Neurológico y Tratamiento Fisioterapeútico"} sizegroup={"5-20 personas"} price={"$49 000"} />
       </section>
       </section>
     </section>

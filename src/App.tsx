@@ -16,6 +16,7 @@ import Home from "./pages/Index/Home";
 import About from "./pages/Index/About";
 import NeuroHome from "./pages/Neuro/NeuroHome";
 import NeuroDiseaseForm from "./components/neuroApp/NeuroDiseaseForm";
+import Register from "./pages/Index/Register";
 
 
 
@@ -33,6 +34,7 @@ export default function App(){
         <Route index element={<Home />}/>
         <Route path="/about" element={<About />}/>
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />}/>
       </Route>
       
       <Route path="/neuro/*" element={<DebitContext.Provider value={{isPurchase, setIsPurchase}}>

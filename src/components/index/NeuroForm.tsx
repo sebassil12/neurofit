@@ -1,7 +1,7 @@
 import React from 'react';
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
 import { Button, Checkbox, Form, Input } from 'antd';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const NeuroForm: React.FC = () => {
     const navigate = useNavigate();
@@ -36,19 +36,15 @@ const NeuroForm: React.FC = () => {
       </Form.Item>
       <Form.Item>
         <Form.Item name="remember" valuePropName="checked" noStyle>
-          <Checkbox>Remember me</Checkbox>
+          <Checkbox>Recordarme</Checkbox>
         </Form.Item>
-
-        <a className="login-form-forgot" href="">
-          Forgot password
-        </a>
       </Form.Item>
 
       <Form.Item>
         <Button type="primary" htmlType="submit" className="login-form-button">
-          Log in
+          Iniciar sesión
         </Button>
-        Or <a href="">register now!</a>
+        O <Link to={"/register"}>Registrate ahora!</Link>
       </Form.Item>
     </Form>
     </div>

@@ -15,8 +15,8 @@ export const DEBIT = {
 }
 
 export const  APP_HOME ={
-    ejercicio:'/images/ejercicio.jpg',
-    kit:'/images/kit.jpg'
+    ejercicio:'/images/plan_fisio.jpeg',
+    kit:'/images/kit.jpeg'
 }
 
 export const NUMBERS = {
