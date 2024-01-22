@@ -2,6 +2,11 @@ import ExerciseCard from "../../components/index/CardExercise/ExerciseCard";
 
 export default function Tronco() {
   return (
+    <section>
+         <h1 style={{fontSize:'50px'}}>Ejercicios de Tronco</h1>
+      <hr />
+      <br/>
+    
     <section style={{display:'flex'}}>
       <ExerciseCard
         title={"Primera Fase"}
@@ -45,5 +50,7 @@ export default function Tronco() {
         titlethree={"Tercero"}
       />
     </section>
+    </section>
+
   );
 }

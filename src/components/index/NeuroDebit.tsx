@@ -31,7 +31,7 @@ return(
     <Form.Item label="Número de tarjeta">
       <Space>
         <Form.Item
-          name="tarjeta"
+          name="numbertarjeta"
           noStyle
           rules={[{ required: true, message: 'Este campo es requerido' }]}
         >
@@ -43,7 +43,7 @@ return(
     <Form.Item label="Nombre del titular">
       <Space>
         <Form.Item
-          name="tarjeta"
+          name="titular"
           noStyle
           rules={[{ required: true, message: 'Este campo es requerido' }]}
         >
@@ -72,7 +72,7 @@ return(
       <Form.Item label="CVV">
       <Space>
         <Form.Item
-          name="tarjeta"
+          name="CVV"
           noStyle
           rules={[{ required: true, message: 'Este campo es requerido' }]}
         >

@@ -12,9 +12,19 @@ export default function NeuroPlan1() {
     const {isFirstForm} = useContext(FormContext)
   return (
     <section>
-        {false ?(
-            <div>
-            <h1>Aún no tienes planes, realiza el test y adquierelos</h1>
+        {isFirstForm ?(
+            <div 
+            style={{
+              display:'flex',
+              width:'80vw',
+              height:'100vh',
+              justifyContent:'center',
+              alignItems:'center',
+              flexDirection:'column'
+            }}
+            >
+            <h1 style={{fontSize:'25px'}}>Aún no tienes planes, realiza el test y adquierelos</h1>
+            
             <Link to={"/neuro/exercise"}><Button type="primary">Volver</Button></Link>
             </div>
         ):(

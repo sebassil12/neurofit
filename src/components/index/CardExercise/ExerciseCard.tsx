@@ -22,6 +22,7 @@ export default function ExerciseCard ({title,pathImage, titleone,titletwo,titlet
       cover={<img height={200} src={pathImage}/>}
     >
       <Meta title={title} />
+      <br/>
       <ExerciseModal onepart={onepart} titleone={titleone} twopart={twopart} titletwo={titletwo} threepart={threepart} titlethree={titlethree} />
     </Card>
 

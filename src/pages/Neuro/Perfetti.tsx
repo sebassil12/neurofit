@@ -3,12 +3,17 @@ import { PERFETTI } from "../../constants/constants";
 
 export default function Perfetti() {
   return (
+    <section>
+      <h1 style={{fontSize:'50px'}}>Ejercicios Perfetti</h1>
+      <hr />
+      <br/>
     <section style={{display:'flex'}}>
+      
       <ExerciseCard
         title={
           <h4>
-            Ejercicio Perfetti con <br />
-            texturas
+            Ejercicio Perfetti <br />
+            con texturas
           </h4>
         }
         pathImage={PERFETTI.one}
@@ -66,6 +71,7 @@ export default function Perfetti() {
         threepart={"El ejercicio debe realizarse 3 veces por semana. 4 series de 10 repeticiones. Las dos primeras series deberán ser con los ojos abiertos (1 serie con cada lado del cuerpo) y las dos últimas serán con los ojos cerrados. El cuidador moverá el segmento corporal y le pedirá que indique en qué posición está (1, 2 o 3). Si está incorrecto, se le indicará nuevamente y se le pedirá que observe el movimiento hasta adaptarlo.Debe ir acompañado con respiración correcta siempre, y entre cada serie realice una pausa de 5 minutos."}
         titlethree={"Indicaciones"}
       />
+    </section>
     </section>
   );
 }

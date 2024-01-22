@@ -12,7 +12,7 @@ const NeuroNavbar: React.FC = () => {
 
 
   return (
-    <Layout>
+    <Layout >
       <Header
         style={{
           position: 'sticky',
@@ -52,7 +52,7 @@ const NeuroNavbar: React.FC = () => {
         />
       </Header>
       <Content style={{backgroundColor:'var(--third)'}}>
-        <Outlet />
+        <Outlet/>
       </Content>
       <Footer style={{ textAlign: 'center' ,backgroundColor:'var(--secondary)'}}>
           <FooterMain />
