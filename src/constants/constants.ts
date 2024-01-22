@@ -24,3 +24,9 @@ export const NUMBERS = {
     two:'/images/two.svg',
     three:'/images/three.svg'
 }
+
+export const PERFETTI = {
+    one:"/images/perfetti1.jpeg",
+    two:"/images/perfetti2.jpeg"
+
+}

@@ -17,6 +17,8 @@ import About from "./pages/Index/About";
 import NeuroHome from "./pages/Neuro/NeuroHome";
 import NeuroDiseaseForm from "./components/neuroApp/NeuroDiseaseForm";
 import Register from "./pages/Index/Register";
+import Perfetti from "./pages/Neuro/Perfetti";
+import Tronco from "./pages/Neuro/Tronco";
 
 
 
@@ -47,6 +49,8 @@ export default function App(){
             <Route path="/" element={<NeuroExercises/>}/>
             <Route path="/form" element={<NeuroDiseaseForm />}/>
             <Route path="/plan_1" element={<NeuroPlan1 />}/>
+            <Route path="/perfetti" element={<Perfetti />}/>
+            <Route path="/tronco" element={<Tronco />}/>
           </Routes>
           </FormContext.Provider>
           }/>

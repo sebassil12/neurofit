@@ -8,11 +8,10 @@ interface CardProps{
     pathImage:string,
     description:React.ReactNode,
     title:string,
-    sizegroup:string,
     price:string
     
 }
-function NeuroCard ({title, pathImage, description, sizegroup, price}:CardProps){
+function NeuroCard ({title, pathImage, description, price}:CardProps){
    return( 
   <Row gutter={0}>
     <Col span={24}>
@@ -29,8 +28,7 @@ function NeuroCard ({title, pathImage, description, sizegroup, price}:CardProps)
         {description}
         </Card>
         <Card>
-          <h4>GRUPO</h4>
-          <p>{sizegroup}</p>
+          
           <p>{price}</p>
           <p><strong>PRECIO + IVA</strong></p>
         </Card>

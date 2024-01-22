@@ -1,7 +1,34 @@
-import React, { useState } from 'react';
-import { Button, Modal } from 'antd';
+import { useState } from "react";
+import { Button, Modal } from "antd";
+import type { CollapseProps } from 'antd';
+import { Collapse } from 'antd';
+interface ModalProps{
+  onepart:string, 
+  titleone:string,
+  twopart:string,
+  titletwo:string,
+  threepart:string,
+  titlethree:string
+}
+export default function ExerciseModal({titleone,onepart,titletwo, twopart, titlethree,threepart}:ModalProps) {
+  const items: CollapseProps['items'] = [
+    {
+      key: '1',
+      label: <h4>{titleone}</h4>,
+      children: <p>{onepart}</p>,
+    },
+    {
+      key: '2',
+      label: <h4>{titletwo}</h4>,
+      children: <p>{twopart}</p>,
+    },
+    {
+      key: '3',
+      label: <h4>{titlethree}</h4>,
+      children: <p>{threepart}</p>,
+    },
+  ];
 
-const ExerciseModal: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const showModal = () => {
@@ -21,23 +48,20 @@ const ExerciseModal: React.FC = () => {
       <Button type="primary" onClick={showModal}>
         Información
       </Button>
-      <Modal title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+      <Modal
+        title="Pasos"
+        open={isModalOpen}
+        onOk={handleOk}
+        onCancel={handleCancel}
+      >
         <div
-        style={{
-            display:"grid",
-            gridTemplateColumns:"repeat(2, 1fr)",            
-        }}
+  
         >
-            <section>
-                info de ejercicio
-            </section>
-            <section>
-                Video
-            </section>
+          <Collapse items={items} defaultActiveKey={['1']} />
         </div>
       </Modal>
     </>
   );
 };
 
-export default ExerciseModal;
+

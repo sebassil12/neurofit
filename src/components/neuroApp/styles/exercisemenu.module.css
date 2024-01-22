@@ -1,0 +1,40 @@
+.container_general{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+
+}
+.container_1{
+    background-image: url('/images/perfetti.jpg');
+    background-size: cover;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_1:hover{
+    opacity: 0.5;
+}
+
+.container_2{
+    background-image: url('/images/sedestacion.jpg');
+    background-size:cover;
+    opacity: 0.7;
+    display: flex;
+    background-position-y: 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_2:hover{
+    opacity: 0.5;
+}
+
+.bottom_1{
+font-size: 25px;
+height: 60px;
+display: flex;
+align-items: center;
+
+}

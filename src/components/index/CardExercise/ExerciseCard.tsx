@@ -4,15 +4,29 @@ import ExerciseModal from './ExerciseModal';
 
 const { Meta } = Card;
 
-const ExerciseCard: React.FC = () => (
-  <Card
-    hoverable
-    style={{ width: 240 }}
-    cover={<img alt="example" src="https://ortoprono.es/wp-content/uploads/2022/01/tipos-de-ejercicios-terapeuticos.jpg" />}
-  >
-    <Meta title="Ejercicio 1" description="Ayuda" />
-    <ExerciseModal />
-  </Card>
-);
+interface ExerciseCardProps{
+  title:React.ReactNode,
+  pathImage:string|undefined,
+  onepart:string,
+  titleone:string,
+  twopart:string,
+  titletwo:string,
+  threepart:string,
+  titlethree:string
+}
+export default function ExerciseCard ({title,pathImage, titleone,titletwo,titlethree,onepart,twopart,threepart}:ExerciseCardProps) {
+  return(
+    <Card
+      hoverable
+      style={{ width: 200 }}
+      cover={<img height={200} src={pathImage}/>}
+    >
+      <Meta title={title} />
+      <ExerciseModal onepart={onepart} titleone={titleone} twopart={twopart} titletwo={titletwo} threepart={threepart} titlethree={titlethree} />
+    </Card>
 
-export default ExerciseCard;
+
+  )
+}
+
+

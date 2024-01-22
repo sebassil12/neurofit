@@ -15,7 +15,7 @@ export default function Purchase() {
       <section>
 
       <NeuroCard 
-        title={"Tratamiento Fisioterapeútico"}
+        title={"Plan Básico"}
           // maindescription={
           //   <>
           //     <h4>PRESENCIAL/ONLINE</h4>
@@ -25,18 +25,16 @@ export default function Purchase() {
         pathImage={NUMBERS.one}
         description={
           <>
-            <h4>BÁSICO FISIO</h4>
             <ul>
-              <li>Plática de temas fundamentales de fisioterapia</li>
-            </ul>
-            <h4>BÁSICO NUTRI</h4>
-            <ul>
-              <li>Plática de temas fundamentales de nutrición</li>
+              <li>Plan Fisioterapéutico basado en FITT</li>
+            
+            
+              <li>Acceso Indefinido</li>
             </ul>
           </>
         }
-        sizegroup={"10-30 personas "}
-        price={"$4500"}
+        
+        price={"$75"}
 
         />
       </section>
@@ -52,14 +50,14 @@ export default function Purchase() {
           <>
           <h4>INCLUYE</h4> 
           <ul>
-            <li>2 pláticas de fisioterapia y nutrición</li>
-            <li>1 sesión stretching + mindfuliness (30 min)</li>
-            <li>1 sesión funcional (30 min)</li>
-            <li>1 sesión nutri - grupos de alimentos (30 min)</li>
+            <li>2 balones medianos</li>
+            <li>2 balones pequeños</li>
+            <li>Tabla de texturas</li>
+            <li>6 conos de colores</li>
           </ul>
           </>
         }
-        title={"Kit Neurológico"} sizegroup={"5-50 personas"} price={"$10 500"} />
+        title={"Fisio KIT"}  price={"$40"} />
 
       </section>
       <section>
@@ -75,12 +73,12 @@ export default function Purchase() {
           <>
             <h4>INCLUYE</h4>
             <ul>
-              <li>49 semanas</li>
-              <li>1 sesión semanal, las sesiones son personalizadas</li>
-              <li>Opciones: Baile, Stretching, Nutrición, Mindfuliness</li>
+              <li>Plan Fisioterapeútico basado en FITT</li>
+              <li>Acceso indefinido</li>
+              <li>Fisio KIT</li>
             </ul>
           </>
-        }title={"Kit Neurológico y Tratamiento Fisioterapeútico"} sizegroup={"5-20 personas"} price={"$49 000"} />
+        }title={"FIIT KIT"} price={"$100"} />
       </section>
       </section>
     </section>
