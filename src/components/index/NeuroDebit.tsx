@@ -2,20 +2,25 @@ import { Button, Form, Input, Space } from 'antd';
 import { useContext } from 'react';
 import DebitContext from '../neuroApp/DebitContext';
 import { useNavigate } from 'react-router-dom';
+import IsKitContext from '../neuroApp/KitContext';
+
+interface KitPurchase{
+  isKitPurchase: boolean;
+}
 
 
 
-
-export default function NeuroDebit(){
+export default function NeuroDebit({isKitPurchase}:KitPurchase){
 
 const {setIsPurchase} = useContext(DebitContext);
+const {setIsKit} = useContext(IsKitContext);
 
 const purchaseNavigate = useNavigate();
 const onFinish = async(values: any) => {
     console.log('Received values of form: ', values);
     setIsPurchase(true);
     purchaseNavigate("/neuro/verification")
-
+    setIsKit(isKitPurchase);
    
 };
 

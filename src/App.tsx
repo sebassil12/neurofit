@@ -19,6 +19,8 @@ import NeuroDiseaseForm from "./components/neuroApp/NeuroDiseaseForm";
 import Register from "./pages/Index/Register";
 import Perfetti from "./pages/Neuro/Perfetti";
 import Tronco from "./pages/Neuro/Tronco";
+import IsKitContext from "./components/neuroApp/KitContext";
+import Kit from "./pages/Neuro/Kit";
 
 
 
@@ -29,6 +31,7 @@ import Tronco from "./pages/Neuro/Tronco";
 export default function App(){
   const [isPurchase, setIsPurchase] = useState<boolean>(false);
   const [isFirstForm, setIsFirstForm] = useState<boolean>(true);
+  const [isKit, setIsKit] = useState<boolean>(false)
   return(
     <BrowserRouter>
       <Routes>
@@ -40,11 +43,13 @@ export default function App(){
       </Route>
       
       <Route path="/neuro/*" element={<DebitContext.Provider value={{isPurchase, setIsPurchase}}>
+      <IsKitContext.Provider value={{isKit, setIsKit}}>
         <Routes>
           <Route path="/" element={<NavbarNeuro/>} >
           <Route index element={<NeuroHome />}/>
           <Route path="/exercise/*" element={
           <FormContext.Provider value={{isFirstForm, setIsFirstForm}}>
+            
           <Routes>
             <Route path="/" element={<NeuroExercises/>}/>
             <Route path="/form" element={<NeuroDiseaseForm />}/>
@@ -52,15 +57,17 @@ export default function App(){
             <Route path="/perfetti" element={<Perfetti />}/>
             <Route path="/tronco" element={<Tronco />}/>
           </Routes>
+ 
           </FormContext.Provider>
           }/>
 
           <Route path="/purchase" element={<NeuroModal />} />
           <Route path="/buy" element={<Purchase />}/>
           <Route path="/verification" element={<SpinCharge />}/>
+          <Route path="/kit" element={<Kit />}/>
         </Route>
         </Routes>
-        
+        </IsKitContext.Provider>
         
         </DebitContext.Provider>}>
         

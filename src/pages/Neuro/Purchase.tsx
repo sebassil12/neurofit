@@ -1,7 +1,10 @@
+import { useContext } from "react";
 import NeuroCard from "../../components/index/NeuroCard";
 import { LOGO, NUMBERS } from "../../constants/constants";
 import purchase from './styles/purchase.module.css'
+import IsKitContext from "../../components/neuroApp/KitContext";
 export default function Purchase() {
+  const {setIsKit} = useContext(IsKitContext);
   return (
     <section >
       <section className={purchase.title_page}>
@@ -38,7 +41,7 @@ export default function Purchase() {
 
         />
       </section>
-      <section>
+      <section onClick={()=>setIsKit(true)}>
         <NeuroCard pathImage={NUMBERS.two}  
         // maindescription={
         //   <>
@@ -60,7 +63,7 @@ export default function Purchase() {
         title={"Fisio KIT"}  price={"$40"} />
 
       </section>
-      <section>
+      <section  onClick={()=>setIsKit(true)}>
         <NeuroCard pathImage={NUMBERS.three}  
         // maindescription={
         //   <>
