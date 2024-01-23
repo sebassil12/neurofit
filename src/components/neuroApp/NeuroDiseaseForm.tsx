@@ -91,7 +91,7 @@ return(
       </Select>
     </Form.Item>
 
-    <Form.Item label="¿Se puede mantener de pie?" name="Stand" rules={[{ required: true, message: 'Ingrese datos' }]}>
+    <Form.Item label="¿Se puede mantener de pie solo?" name="Stand" rules={[{ required: true, message: 'Ingrese datos' }]}>
       <Select style={{width:'50%'}}>
       <Option value="china">Si</Option>
         <Option value="usa">No</Option>

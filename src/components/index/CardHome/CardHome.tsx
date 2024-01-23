@@ -4,7 +4,7 @@ interface HomeCard{
     image:string|undefined,
     title:string,
     isDocument:boolean,
-    description:string,
+    description:string|React.ReactNode,
     path:any,
     descriptionButton:string
 

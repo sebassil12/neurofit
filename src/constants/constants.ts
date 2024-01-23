@@ -3,7 +3,9 @@ export const IMAGE_CAROUSEL = {
     old_man: "/images/old_man.jpg",
     tower: "/images/tower_exercise.jpg"
 }
-
+export const IMAGEABOUT = {
+    about:'/images/about.png'
+}
 export const LOGO ={
     main:"/images/logo.png",
     second: "/images/second_logo.png"
