@@ -7,12 +7,12 @@ const { Meta } = Card;
 interface ExerciseCardProps{
   title:React.ReactNode,
   pathImage:string|undefined,
-  onepart:string,
-  titleone:string,
-  twopart:string,
-  titletwo:string,
-  threepart:string,
-  titlethree:string
+  onepart:string|undefined,
+  titleone:string|null,
+  twopart:string|null,
+  titletwo:string|null,
+  threepart:string|null,
+  titlethree:string|null
 }
 export default function ExerciseCard ({title,pathImage, titleone,titletwo,titlethree,onepart,twopart,threepart}:ExerciseCardProps) {
   return(

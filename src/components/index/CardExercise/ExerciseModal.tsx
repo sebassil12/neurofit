@@ -3,12 +3,12 @@ import { Button, Modal } from "antd";
 import type { CollapseProps } from 'antd';
 import { Collapse } from 'antd';
 interface ModalProps{
-  onepart:string, 
-  titleone:string,
-  twopart:string,
-  titletwo:string,
-  threepart:string,
-  titlethree:string
+  onepart:string|undefined, 
+  titleone:string|null,
+  twopart:string|null,
+  titletwo:string|null,
+  threepart:string|null,
+  titlethree:string|null
 }
 export default function ExerciseModal({titleone,onepart,titletwo, twopart, titlethree,threepart}:ModalProps) {
   const items: CollapseProps['items'] = [

@@ -30,3 +30,10 @@ export const PERFETTI = {
     two:"/images/perfetti2.jpeg"
 
 }
+
+export const TRONCO = {
+    phase1:"/images/First.jpeg",
+    phase11:"/images/First-1.jpeg",
+    second:"/images/second.jpeg",
+    third:"/images/third.jpeg"
+}

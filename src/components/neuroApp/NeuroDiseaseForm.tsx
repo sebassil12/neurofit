@@ -7,7 +7,7 @@ import {
   Select,
 } from 'antd';
 import { useContext } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import FormContext from './FormContext';
 const { Option } = Select; 
 {/*Esta historia clinica la esta llenando:Paciente o Cuidador
@@ -163,6 +163,13 @@ return(
       <Button type="primary" htmlType="submit">
         Enviar
       </Button>
+    </Form.Item>
+    <Form.Item wrapperCol={{ offset: 6, span: 16 }}>
+      <Link to={"/neuro/exercise"}>
+      <Button >
+        Volver
+      </Button>
+      </Link>
     </Form.Item>
 
     

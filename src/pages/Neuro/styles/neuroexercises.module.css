@@ -1,0 +1,27 @@
+.container_general{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container_1{
+    background-color: var(--third); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_2{
+    background-color: var(--secondary); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom_1{
+    font-size: 20px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+}

@@ -5,7 +5,7 @@ export default function Perfetti() {
   return (
     <section>
       <h1 style={{fontSize:'50px'}}>Ejercicios Perfetti</h1>
-      <hr />
+      <br />
       <br/>
     <section style={{display:'flex'}}>
       
